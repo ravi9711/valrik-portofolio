@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valrik Tech Hub + Contact</title>
+  <style>
+    :root {
+      --color-primary: #00faff;
+      --color-primary-glow: #00e6ff;
+      --color-bg: #0f0f10;
+      --color-text: #fff;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --shadow-glow: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary);
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background: var(--color-bg);
+      color: var(--color-text);
+      text-align: center;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Video Background */
+    #bg-video {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: blur(3px) brightness(0.6);
+    }
+
+    header {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px red;
+      object-fit: cover;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: var(--shadow-glow);
+    }
+    .welcome {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-shadow: var(--shadow-glow);
+      margin: 0 1rem 3rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    section {
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 0 10px #333;
+      flex: 1 1 400px;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      text-shadow: var(--shadow-glow);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+    li {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+    li a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    li a:hover {
+      color: var(--color-primary-glow);
+      text-decoration: underline;
+    }
+
+    /* Contact Form */
+    form.card {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 28px;
+      border-radius: 12px;
+      margin: 2rem auto;
+      max-width: 600px;
+      text-align: left;
+    }
+    .field {
+      margin-bottom: 18px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      background: #f7e9ff;
+      color: #111;
+    }
+    textarea { min-height: 100px; resize: vertical; }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      background: linear-gradient(90deg,#0072ff,#00c6ff); /* Blue → Cyan */
+      color: #fff;
+      font-size: 16px;
+      box-shadow: 0 0 12px rgba(0, 198, 255, 0.6);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg,#005bea,#00c6ff);
+      transform: scale(1.03);
+    }
+
+    .note { font-size: 13px; color: #ccc; margin-top: 8px; }
+    .success{background:#173f24;padding:10px;border-radius:6px;color:#b7f5bf;margin-bottom:12px}
+    .error{background:#3f1919;padding:10px;border-radius:6px;color:#ffb3b3;margin-bottom:12px}
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 1rem;
+      border-top: 1px solid var(--color-primary);
+      color: #fff;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    footer img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    footer a {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <video id="bg-video" autoplay muted loop playsinline preload="metadata">
+    <source src="https://files.catbox.moe/31pmzx.mp4" type="video/mp4" />
+  </video>
+
+  <header>
+    <img src="https://files.catbox.moe/nau8l9.jpg" alt="Profile">
+    <h1>VALRIK TECH HUB</h1>
+  </header>
+  <p class="welcome">HELLO VALRIK THIS SIDE, WELCOME</p>
+
+  <main>
+    <!-- Connect -->
+    <section>
+      <h2>🔗 Connect</h2>
+      <ul>
+        <li><a href="https://t.me/imvalrik" target="_blank">👤 Profile</a></li>
+        <li><a href="https://t.me/+EJ3idcDVxxhmOGVh" target="_blank">📺 Channel</a></li>
+        <li><a href="https://t.me/+8xcBXXRTYfE3MjYx" target="_blank">💬 Chat Group</a></li>
+      </ul>
+    </section>
+
+    <!-- Services -->
+    <section>
+      <h2>💼 Our Services</h2>
+      <ul>
+        <li><a href="https://t.me/imvalrik" target="_blank">📱 Telegram International ID</a></li>
+        <li><a href="https://t.me/imvalrik" target="_blank">💬 WhatsApp International Account</a></li>
+        <li><a href="https://t.me/imvalrik" target="_blank">📈 Members, Likes, Views, Subscribers</a></li>
+        <li><a href="https://t.me/imvalrik" target="_blank">🤖 Username to Mobile No Bot</a></li>
+        <li><a href="https://t.me/imvalrik" target="_blank">📞 Mobile No to Info Bot</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Me Button -->
+    <section>
+      <h2>📩 Contact Me</h2>
+      <a href="#contactForm" class="btn">Go to Contact Form</a>
+    </section>
+  </main>
+
+  <!-- Contact Form -->
+  <form id="contactForm" class="card" onsubmit="return false;">
+    <div id="alertArea"></div>
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email">
+    </div>
+    <div class="field">
+      <label for="tg">Telegram Username</label>
+      <input id="tg" name="tg" type="text">
+    </div>
+    <div class="field">
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text">
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="field">
+      <button id="sendBtn" class="btn">Send</button>
+    </div>
+    <div class="note">Message will be sent privately to the bot owner (server-side).</div>
+  </form>
+
+  <footer>
+    <img src="https://files.catbox.moe/zwwzir.jpg" alt="Valrik Logo">
+    designed by <a href="https://t.me/kaizzen2856" target="_blank">kaizen</a>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const alertArea = document.getElementById('alertArea');
+    const sendBtn = document.getElementById('sendBtn');
+
+    function show(type, text){
+      alertArea.innerHTML = '<div class="'+(type==='ok'?'success':'error')+'">'+text+'</div>';
+      setTimeout(()=>{ alertArea.innerHTML = '' }, 7000);
+    }
+
+    sendBtn.addEventListener('click', async () => {
+      sendBtn.disabled = true;
+      sendBtn.textContent = 'Sending...';
+
+      const payload = {
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        tg: document.getElementById('tg').value.trim(),
+        subject: document.getElementById('subject').value.trim(),
+        message: document.getElementById('message').value.trim()
+      };
+
+      if(!payload.name || !payload.message){
+        show('err','Please fill required fields (Name and Message).');
+        sendBtn.disabled = false;
+        sendBtn.textContent = 'Send';
+        return;
+      }
+
+      try{
+        const res = await fetch('/send', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const j = await res.json();
+        if(res.ok && j.ok){
+          show('ok','Message sent successfully — thank you!');
+          form.reset();
+        } else {
+          show('err','Failed to send message: '+(j.error || 'server error'));
+        }
+      }catch(err){
+        show('err','Network error: '+err.message);
+      } finally {
+        sendBtn.disabled = false;
+        sendBtn.textContent = 'Send';
+      }
+    });
+  </script>
+</body>
+</html>
